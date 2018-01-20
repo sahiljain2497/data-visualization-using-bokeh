@@ -13,6 +13,8 @@ for i in  range(1,sheet.nrows):
         else :
             y.append(int(sheet.cell(i,j).value)/10)
 #print(x,y)
+o.xaxis.axis_label="Tempurature"
+o.yaxis.axis_label="Pressure"
 o.title.text="Temperature and Air Pressure"
 o.circle(x,y,size=5,color="blue")
 output_file("Graph.html")
